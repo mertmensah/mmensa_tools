@@ -1,0 +1,31 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="640" rx="32" fill="#F7FBFF"/>
+  <rect x="28" y="28" width="904" height="584" rx="28" fill="white" stroke="#CFE1F2" stroke-width="2"/>
+  <text x="72" y="96" fill="#17314A" font-family="Aptos, Segoe UI, sans-serif" font-size="34" font-weight="800">Revenue Mix</text>
+  <text x="72" y="128" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Quarterly composition</text>
+  <line x1="96" y1="520" x2="860" y2="520" stroke="#A8C8E4" stroke-width="2"/>
+  <line x1="96" y1="520" x2="96" y2="180" stroke="#A8C8E4" stroke-width="2"/>
+  <rect x="170" y="402" width="88" height="78" rx="14" fill="#9FC9EE"/>
+  <rect x="170" y="254" width="88" height="148" rx="14" fill="#68A8DF"/>
+  <rect x="170" y="214" width="88" height="40" rx="14" fill="#204B73"/>
+  <rect x="332" y="384" width="88" height="96" rx="14" fill="#9FC9EE"/>
+  <rect x="332" y="228" width="88" height="156" rx="14" fill="#68A8DF"/>
+  <rect x="332" y="182" width="88" height="46" rx="14" fill="#204B73"/>
+  <rect x="494" y="366" width="88" height="114" rx="14" fill="#9FC9EE"/>
+  <rect x="494" y="196" width="88" height="170" rx="14" fill="#68A8DF"/>
+  <rect x="494" y="142" width="88" height="54" rx="14" fill="#204B73"/>
+  <rect x="656" y="334" width="88" height="146" rx="14" fill="#9FC9EE"/>
+  <rect x="656" y="154" width="88" height="180" rx="14" fill="#68A8DF"/>
+  <rect x="656" y="88" width="88" height="66" rx="14" fill="#204B73"/>
+  <text x="193" y="558" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Q1</text>
+  <text x="355" y="558" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Q2</text>
+  <text x="517" y="558" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Q3</text>
+  <text x="679" y="558" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Q4</text>
+  <rect x="690" y="84" width="140" height="108" rx="18" fill="#F6FBFF" stroke="#CFE1F2"/>
+  <circle cx="714" cy="116" r="8" fill="#9FC9EE"/>
+  <text x="732" y="122" fill="#17314A" font-family="Aptos, Segoe UI, sans-serif" font-size="18">New</text>
+  <circle cx="714" cy="148" r="8" fill="#68A8DF"/>
+  <text x="732" y="154" fill="#17314A" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Renewal</text>
+  <circle cx="714" cy="180" r="8" fill="#204B73"/>
+  <text x="732" y="186" fill="#17314A" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Expansion</text>
+</svg>

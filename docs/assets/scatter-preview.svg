@@ -1,0 +1,20 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="640" rx="32" fill="#F7FBFF"/>
+  <rect x="28" y="28" width="904" height="584" rx="28" fill="white" stroke="#CFE1F2" stroke-width="2"/>
+  <text x="72" y="96" fill="#17314A" font-family="Aptos, Segoe UI, sans-serif" font-size="34" font-weight="800">Retention vs Satisfaction</text>
+  <text x="72" y="128" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Cluster positioning by account segment</text>
+  <line x1="96" y1="520" x2="860" y2="520" stroke="#A8C8E4" stroke-width="2"/>
+  <line x1="96" y1="520" x2="96" y2="180" stroke="#A8C8E4" stroke-width="2"/>
+  <circle cx="228" cy="432" r="18" fill="#9FC9EE" stroke="#204B73" stroke-width="3"/>
+  <circle cx="310" cy="388" r="18" fill="#9FC9EE" stroke="#204B73" stroke-width="3"/>
+  <circle cx="406" cy="340" r="18" fill="#68A8DF" stroke="#204B73" stroke-width="3"/>
+  <circle cx="500" cy="292" r="18" fill="#68A8DF" stroke="#204B73" stroke-width="3"/>
+  <circle cx="632" cy="228" r="18" fill="#2F6FB1" stroke="#204B73" stroke-width="3"/>
+  <circle cx="738" cy="198" r="18" fill="#2F6FB1" stroke="#204B73" stroke-width="3"/>
+  <text x="128" y="560" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Low</text>
+  <text x="748" y="560" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">High satisfaction</text>
+  <text x="42" y="220" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18" transform="rotate(-90 42 220)">High retention</text>
+  <rect x="658" y="84" width="174" height="94" rx="18" fill="#F6FBFF" stroke="#CFE1F2"/>
+  <text x="686" y="120" fill="#17314A" font-family="Aptos, Segoe UI, sans-serif" font-size="20" font-weight="700">Segments</text>
+  <text x="686" y="148" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="16">SMB  Mid-market  Enterprise</text>
+</svg>

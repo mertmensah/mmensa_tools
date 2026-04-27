@@ -21,10 +21,14 @@
       <nav class="nav-list" aria-label="Reference categories">
         <button class="nav-item active" data-target="overview">Overview</button>
         <button class="nav-item" data-target="slides">HTML Slide Decks</button>
+        <button class="nav-item" data-target="tokens">Theme Tokens</button>
         <button class="nav-item" data-target="timeseries">Python Graphs: Time Series</button>
         <button class="nav-item" data-target="histograms">Python Graphs: Histograms</button>
         <button class="nav-item" data-target="heatmaps">Python Graphs: Heatmaps</button>
         <button class="nav-item" data-target="bars">Python Graphs: Bar Charts</button>
+        <button class="nav-item" data-target="scatter">Python Graphs: Scatter Plots</button>
+        <button class="nav-item" data-target="stacked">Python Graphs: Stacked Bars</button>
+        <button class="nav-item" data-target="waterfall">Python Graphs: Waterfalls</button>
       </nav>
 
       <div class="sidebar-foot">
@@ -66,6 +70,15 @@
 )</code></pre>
           </article>
           <article class="info-card">
+            <h3>Reference Layers</h3>
+            <ul>
+              <li>Reusable snippets with one-click copy</li>
+              <li>Visual previews for fast selection</li>
+              <li>Theme tokens for consistent styling</li>
+              <li>Analyst-friendly chart patterns beyond the core helpers</li>
+            </ul>
+          </article>
+          <article class="info-card">
             <h3>Best Use Cases</h3>
             <ul>
               <li>Executive update charts</li>
@@ -73,6 +86,79 @@
               <li>Browser-viewable presentations</li>
               <li>Fast analytical storytelling in Python</li>
             </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="tokens">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Theme Tokens</p>
+            <h3>Color, type, and spacing references</h3>
+          </div>
+          <span class="pill">Use these to stay visually consistent</span>
+        </div>
+        <div class="panel-grid token-grid">
+          <article class="token-card">
+            <h4>Palette</h4>
+            <div class="swatch-grid">
+              <div class="swatch">
+                <span class="swatch-chip" style="background:#f7fbff"></span>
+                <strong>Cloud</strong>
+                <p>#f7fbff</p>
+              </div>
+              <div class="swatch">
+                <span class="swatch-chip" style="background:#d8ecff"></span>
+                <strong>Glow</strong>
+                <p>#d8ecff</p>
+              </div>
+              <div class="swatch">
+                <span class="swatch-chip" style="background:#68a8df"></span>
+                <strong>Primary</strong>
+                <p>#68a8df</p>
+              </div>
+              <div class="swatch">
+                <span class="swatch-chip" style="background:#2f6fb1"></span>
+                <strong>Accent</strong>
+                <p>#2f6fb1</p>
+              </div>
+              <div class="swatch">
+                <span class="swatch-chip" style="background:#204b73"></span>
+                <strong>Anchor</strong>
+                <p>#204b73</p>
+              </div>
+            </div>
+          </article>
+          <article class="token-card">
+            <h4>Typography</h4>
+            <div class="type-spec">
+              <p class="type-display">Aptos Display 800</p>
+              <p class="type-body">Aptos 400 for explanatory body copy and annotations.</p>
+              <p class="type-label">Aptos 700 for labels, pills, buttons, and section markers.</p>
+            </div>
+          </article>
+          <article class="token-card">
+            <h4>Layout Rhythm</h4>
+            <ul>
+              <li>Outer panels: 24px to 28px padding</li>
+              <li>Card radius: 22px to 28px</li>
+              <li>Panel gap: 18px</li>
+              <li>Executive chart aspect: 10x6 or 12x7</li>
+            </ul>
+          </article>
+          <article class="code-card">
+            <div class="code-card-head">
+              <h4>Theme setup</h4>
+              <button class="copy-button" type="button" data-copy-target="snippet-theme-setup">Copy code</button>
+            </div>
+            <pre><code id="snippet-theme-setup">from mertmensah import apply_mert_theme, get_palette
+
+apply_mert_theme()
+palette = get_palette()
+
+primary = palette[0]
+accent = "#204b73"
+surface = "#f7fbff"</code></pre>
           </article>
         </div>
       </section>
@@ -90,8 +176,11 @@
             <iframe title="Slide deck preview" src="assets/sample_deck.html"></iframe>
           </article>
           <article class="code-card">
-            <h4>Python API</h4>
-            <pre><code>from mertmensah import DeckSlide, DeckSection, write_slide_deck
+            <div class="code-card-head">
+              <h4>Python API</h4>
+              <button class="copy-button" type="button" data-copy-target="snippet-slides">Copy code</button>
+            </div>
+            <pre><code id="snippet-slides">from mertmensah import DeckSlide, DeckSection, write_slide_deck
 
 slides = [
     DeckSlide(
@@ -129,8 +218,11 @@ write_slide_deck(slides, output_path="deck.html", title="Quarterly Review")</cod
             <img src="assets/timeseries-preview.svg" alt="Time series preview" />
           </article>
           <article class="code-card">
-            <h4>Code</h4>
-            <pre><code>from mertmensah import apply_mert_theme, lineplot
+            <div class="code-card-head">
+              <h4>Code</h4>
+              <button class="copy-button" type="button" data-copy-target="snippet-timeseries">Copy code</button>
+            </div>
+            <pre><code id="snippet-timeseries">from mertmensah import apply_mert_theme, lineplot
 import pandas as pd
 
 apply_mert_theme()
@@ -164,8 +256,11 @@ ax = lineplot(
             <img src="assets/histogram-preview.svg" alt="Histogram preview" />
           </article>
           <article class="code-card">
-            <h4>Code</h4>
-            <pre><code>import numpy as np
+            <div class="code-card-head">
+              <h4>Code</h4>
+              <button class="copy-button" type="button" data-copy-target="snippet-histogram">Copy code</button>
+            </div>
+            <pre><code id="snippet-histogram">import numpy as np
 import matplotlib.pyplot as plt
 from mertmensah import apply_mert_theme, style_axes, add_source_note
 
@@ -192,8 +287,11 @@ add_source_note(ax, "Source: Internal workflow logs")</code></pre>
             <img src="assets/heatmap-preview.svg" alt="Heatmap preview" />
           </article>
           <article class="code-card">
-            <h4>Code</h4>
-            <pre><code>from mertmensah import heatmap
+            <div class="code-card-head">
+              <h4>Code</h4>
+              <button class="copy-button" type="button" data-copy-target="snippet-heatmap">Copy code</button>
+            </div>
+            <pre><code id="snippet-heatmap">from mertmensah import heatmap
 import pandas as pd
 
 matrix = pd.DataFrame(
@@ -224,8 +322,11 @@ ax = heatmap(
             <img src="assets/bar-preview.svg" alt="Bar chart preview" />
           </article>
           <article class="code-card">
-            <h4>Code</h4>
-            <pre><code>from mertmensah import barplot, add_source_note
+            <div class="code-card-head">
+              <h4>Code</h4>
+              <button class="copy-button" type="button" data-copy-target="snippet-bars">Copy code</button>
+            </div>
+            <pre><code id="snippet-bars">from mertmensah import barplot, add_source_note
 import pandas as pd
 
 summary = pd.DataFrame({
@@ -241,6 +342,122 @@ ax = barplot(
     subtitle="Year-over-year comparison",
 )
 add_source_note(ax, "Source: Internal planning data")</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="scatter">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Python Graphs</p>
+            <h3>Scatter plots</h3>
+          </div>
+          <span class="pill">Correlation and clustering</span>
+        </div>
+        <div class="panel-grid feature-grid">
+          <article class="preview-card">
+            <img src="assets/scatter-preview.svg" alt="Scatter plot preview" />
+          </article>
+          <article class="code-card">
+            <div class="code-card-head">
+              <h4>Code</h4>
+              <button class="copy-button" type="button" data-copy-target="snippet-scatter">Copy code</button>
+            </div>
+            <pre><code id="snippet-scatter">import matplotlib.pyplot as plt
+import pandas as pd
+from mertmensah import apply_mert_theme, style_axes
+
+apply_mert_theme()
+
+df = pd.DataFrame({
+    "satisfaction": [61, 66, 70, 74, 79, 83],
+    "retention": [58, 62, 67, 71, 78, 84],
+    "segment": ["SMB", "SMB", "Mid", "Mid", "Ent", "Ent"],
+})
+
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.scatter(df["satisfaction"], df["retention"], s=180, c="#68a8df", edgecolors="#204b73", linewidths=1.2)
+style_axes(ax, title="Retention vs Satisfaction", subtitle="Cluster positioning by account segment")</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="stacked">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Python Graphs</p>
+            <h3>Stacked bars</h3>
+          </div>
+          <span class="pill">Composition over time</span>
+        </div>
+        <div class="panel-grid feature-grid">
+          <article class="preview-card">
+            <img src="assets/stacked-preview.svg" alt="Stacked bar preview" />
+          </article>
+          <article class="code-card">
+            <div class="code-card-head">
+              <h4>Code</h4>
+              <button class="copy-button" type="button" data-copy-target="snippet-stacked">Copy code</button>
+            </div>
+            <pre><code id="snippet-stacked">import matplotlib.pyplot as plt
+import pandas as pd
+from mertmensah import apply_mert_theme, style_axes, add_source_note
+
+apply_mert_theme()
+
+df = pd.DataFrame({
+    "quarter": ["Q1", "Q2", "Q3", "Q4"],
+    "new": [18, 22, 24, 28],
+    "renewal": [34, 36, 39, 41],
+    "expansion": [8, 10, 12, 15],
+})
+
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.bar(df["quarter"], df["new"], color="#9fc9ee", label="New")
+ax.bar(df["quarter"], df["renewal"], bottom=df["new"], color="#68a8df", label="Renewal")
+ax.bar(df["quarter"], df["expansion"], bottom=df["new"] + df["renewal"], color="#204b73", label="Expansion")
+style_axes(ax, title="Revenue Mix", subtitle="Quarterly composition")
+ax.legend(frameon=False)
+add_source_note(ax, "Source: Planning model")</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="waterfall">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Python Graphs</p>
+            <h3>Waterfalls</h3>
+          </div>
+          <span class="pill">Bridge from start to finish</span>
+        </div>
+        <div class="panel-grid feature-grid">
+          <article class="preview-card">
+            <img src="assets/waterfall-preview.svg" alt="Waterfall preview" />
+          </article>
+          <article class="code-card">
+            <div class="code-card-head">
+              <h4>Code</h4>
+              <button class="copy-button" type="button" data-copy-target="snippet-waterfall">Copy code</button>
+            </div>
+            <pre><code id="snippet-waterfall">import matplotlib.pyplot as plt
+import pandas as pd
+from mertmensah import apply_mert_theme, style_axes
+
+apply_mert_theme()
+
+bridge = pd.DataFrame({
+    "step": ["Start", "Price", "Volume", "Mix", "End"],
+    "change": [120, 18, -11, 9, 136],
+})
+
+starts = [0, 120, 138, 127, 0]
+heights = [120, 18, -11, 9, 136]
+colors = ["#9fc9ee", "#68a8df", "#d66f6f", "#204b73", "#2f6fb1"]
+
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.bar(bridge["step"], heights, bottom=starts, color=colors)
+style_axes(ax, title="Revenue Bridge", subtitle="Drivers of year-over-year change")</code></pre>
           </article>
         </div>
       </section>

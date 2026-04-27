@@ -211,6 +211,10 @@ h4 {
   gap: 18px;
 }
 
+.token-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
 .overview-grid {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
@@ -221,11 +225,97 @@ h4 {
 
 .info-card,
 .preview-card,
-.code-card {
+.code-card,
+.token-card {
   border: 1px solid var(--line);
   border-radius: 22px;
   background: var(--panel-solid);
   padding: 18px;
+}
+
+.token-card ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.swatch-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.swatch {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 10px 12px;
+  align-items: center;
+}
+
+.swatch-chip {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(32, 75, 115, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+  grid-row: span 2;
+}
+
+.swatch p,
+.type-spec p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.type-spec {
+  display: grid;
+  gap: 12px;
+}
+
+.type-display {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.type-body {
+  font-size: 1rem;
+}
+
+.type-label {
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+.code-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.copy-button {
+  border: 1px solid var(--line-strong);
+  background: linear-gradient(180deg, #ffffff, #edf6ff);
+  color: var(--accent-strong);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.86rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+
+.copy-button:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+}
+
+.copy-button.copied {
+  background: linear-gradient(180deg, #dff1ff, #cde7ff);
+  border-color: var(--accent);
 }
 
 .preview-card img,
@@ -277,5 +367,11 @@ code {
 
   .feature-grid {
     grid-template-columns: 1fr;
+  }
+
+  .code-card-head,
+  .panel-head {
+    align-items: stretch;
+    flex-direction: column;
   }
 }

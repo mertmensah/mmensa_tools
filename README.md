@@ -1,5 +1,7 @@
 # mertmensah
 
+[Open the live reference site](https://mertmensah.github.io/mmensa_tools/)
+
 A personal style reference toolkit for work artifacts.
 
 This package gives you two things:
@@ -64,4 +66,4 @@ See `examples/` for a plot demo and slide-deck demo.
 
 ## Reference Site
 
-A GitHub Pages frontend for browsing chart and slide-deck reference patterns lives under `docs/`.
+A GitHub Pages frontend for browsing chart and slide-deck reference patterns lives under `docs/` and is published at https://mertmensah.github.io/mmensa_tools/.

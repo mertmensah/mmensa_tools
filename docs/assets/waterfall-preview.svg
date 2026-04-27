@@ -1,0 +1,24 @@
+<svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="640" rx="32" fill="#F7FBFF"/>
+  <rect x="28" y="28" width="904" height="584" rx="28" fill="white" stroke="#CFE1F2" stroke-width="2"/>
+  <text x="72" y="96" fill="#17314A" font-family="Aptos, Segoe UI, sans-serif" font-size="34" font-weight="800">Revenue Bridge</text>
+  <text x="72" y="128" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Drivers of year-over-year change</text>
+  <line x1="96" y1="520" x2="860" y2="520" stroke="#A8C8E4" stroke-width="2"/>
+  <line x1="96" y1="520" x2="96" y2="170" stroke="#A8C8E4" stroke-width="2"/>
+  <rect x="150" y="240" width="98" height="240" rx="14" fill="#9FC9EE"/>
+  <line x1="248" y1="240" x2="356" y2="240" stroke="#A8C8E4" stroke-width="3" stroke-dasharray="8 8"/>
+  <rect x="356" y="204" width="98" height="36" rx="14" fill="#68A8DF"/>
+  <line x1="454" y1="204" x2="562" y2="204" stroke="#A8C8E4" stroke-width="3" stroke-dasharray="8 8"/>
+  <rect x="562" y="204" width="98" height="52" rx="14" fill="#D66F6F"/>
+  <line x1="660" y1="256" x2="768" y2="256" stroke="#A8C8E4" stroke-width="3" stroke-dasharray="8 8"/>
+  <rect x="768" y="220" width="98" height="36" rx="14" fill="#204B73"/>
+  <rect x="768" y="184" width="98" height="296" rx="14" fill="#2F6FB1" fill-opacity="0.18" stroke="#2F6FB1" stroke-width="2"/>
+  <text x="173" y="558" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Start</text>
+  <text x="384" y="558" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Price</text>
+  <text x="582" y="558" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">Volume</text>
+  <text x="790" y="558" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="18">End</text>
+  <rect x="636" y="88" width="194" height="116" rx="18" fill="#F6FBFF" stroke="#CFE1F2"/>
+  <text x="660" y="122" fill="#17314A" font-family="Aptos, Segoe UI, sans-serif" font-size="20" font-weight="700">Drivers</text>
+  <text x="660" y="152" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="16">Positive: blue tones</text>
+  <text x="660" y="178" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="16">Negative: muted red</text>
+</svg>

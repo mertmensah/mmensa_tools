@@ -211,6 +211,10 @@ h4 {
   gap: 18px;
 }
 
+.stacked-graph-list {
+  gap: 22px;
+}
+
 .token-grid {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
@@ -226,11 +230,21 @@ h4 {
 .info-card,
 .preview-card,
 .code-card,
-.token-card {
+.token-card,
+.graph-tile {
   border: 1px solid var(--line);
   border-radius: 22px;
   background: var(--panel-solid);
   padding: 18px;
+}
+
+.graph-tile {
+  display: grid;
+  gap: 16px;
+}
+
+.graph-tile-head {
+  margin-bottom: 0;
 }
 
 .token-card ul {

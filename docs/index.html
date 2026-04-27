@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mertmensah | Style Reference</title>
+  <title>mertmensah | Design Gallery</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,23 +12,17 @@
       <div class="brand-block">
         <div class="brand-mark" aria-hidden="true"></div>
         <div>
-          <p class="eyebrow">Reference System</p>
+          <p class="eyebrow">Design Gallery</p>
           <h1>mertmensah</h1>
-          <p class="brand-copy">A personal front end for presentation design, chart styling, and browser-viewable slide decks.</p>
+          <p class="brand-copy">A front end for presentation design, chart styling, and browser-viewable slide decks.</p>
         </div>
       </div>
 
-      <nav class="nav-list" aria-label="Reference categories">
+      <nav class="nav-list" aria-label="Site categories">
         <button class="nav-item active" data-target="overview">Overview</button>
         <button class="nav-item" data-target="slides">HTML Slide Decks</button>
         <button class="nav-item" data-target="tokens">Theme Tokens</button>
-        <button class="nav-item" data-target="timeseries">Python Graphs: Time Series</button>
-        <button class="nav-item" data-target="histograms">Python Graphs: Histograms</button>
-        <button class="nav-item" data-target="heatmaps">Python Graphs: Heatmaps</button>
-        <button class="nav-item" data-target="bars">Python Graphs: Bar Charts</button>
-        <button class="nav-item" data-target="scatter">Python Graphs: Scatter Plots</button>
-        <button class="nav-item" data-target="stacked">Python Graphs: Stacked Bars</button>
-        <button class="nav-item" data-target="waterfall">Python Graphs: Waterfalls</button>
+        <button class="nav-item" data-target="graphs">Python Graphs</button>
       </nav>
 
       <div class="sidebar-foot">
@@ -44,11 +38,11 @@
 
     <main class="main-pane">
       <header class="hero">
-        <p class="eyebrow">Work Reference</p>
-        <h2>Browse reusable style code by artifact type</h2>
+        <p class="eyebrow">Style Library</p>
+        <h2>Browse polished examples by format</h2>
         <p>
-          Use the left pane to jump between categories. Each section shows the visual treatment, the package API,
-          and copy-ready code snippets for future work.
+          Use the left pane to jump between categories. Each section shows the visual treatment,
+          the package API, and copy-ready code snippets.
         </p>
       </header>
 
@@ -70,7 +64,7 @@
 )</code></pre>
           </article>
           <article class="info-card">
-            <h3>Reference Layers</h3>
+            <h3>What You Get</h3>
             <ul>
               <li>Reusable snippets with one-click copy</li>
               <li>Visual previews for fast selection</li>
@@ -94,7 +88,7 @@
         <div class="panel-head">
           <div>
             <p class="eyebrow">Theme Tokens</p>
-            <h3>Color, type, and spacing references</h3>
+            <h3>Color, type, and spacing guide</h3>
           </div>
           <span class="pill">Use these to stay visually consistent</span>
         </div>
@@ -205,24 +199,33 @@ write_slide_deck(slides, output_path="deck.html", title="Quarterly Review")</cod
         </div>
       </section>
 
-      <section class="panel" id="timeseries">
+      <section class="panel" id="graphs">
         <div class="panel-head">
           <div>
             <p class="eyebrow">Python Graphs</p>
-            <h3>Time series</h3>
+            <h3>Chart styles in one place</h3>
           </div>
-          <span class="pill">Trend and trajectory</span>
+          <span class="pill">Stacked vertically for quick scanning</span>
         </div>
-        <div class="panel-grid feature-grid">
-          <article class="preview-card">
-            <img src="assets/timeseries-preview.svg" alt="Time series preview" />
-          </article>
-          <article class="code-card">
-            <div class="code-card-head">
-              <h4>Code</h4>
-              <button class="copy-button" type="button" data-copy-target="snippet-timeseries">Copy code</button>
+        <div class="panel-grid stacked-graph-list">
+          <article class="graph-tile">
+            <div class="panel-head graph-tile-head">
+              <div>
+                <p class="eyebrow">Python Graphs</p>
+                <h4>Time series</h4>
+              </div>
+              <span class="pill">Trend and trajectory</span>
             </div>
-            <pre><code id="snippet-timeseries">from mertmensah import apply_mert_theme, lineplot
+            <div class="feature-grid">
+              <article class="preview-card">
+                <img src="assets/timeseries-preview.svg" alt="Time series preview" />
+              </article>
+              <article class="code-card">
+                <div class="code-card-head">
+                  <h4>Code</h4>
+                  <button class="copy-button" type="button" data-copy-target="snippet-timeseries">Copy code</button>
+                </div>
+                <pre><code id="snippet-timeseries">from mertmensah import apply_mert_theme, lineplot
 import pandas as pd
 
 apply_mert_theme()
@@ -239,28 +242,28 @@ ax = lineplot(
     title="Revenue Trend",
     subtitle="Monthly commercial momentum",
 )</code></pre>
-          </article>
-        </div>
-      </section>
-
-      <section class="panel" id="histograms">
-        <div class="panel-head">
-          <div>
-            <p class="eyebrow">Python Graphs</p>
-            <h3>Histograms</h3>
-          </div>
-          <span class="pill">Distribution and spread</span>
-        </div>
-        <div class="panel-grid feature-grid">
-          <article class="preview-card">
-            <img src="assets/histogram-preview.svg" alt="Histogram preview" />
-          </article>
-          <article class="code-card">
-            <div class="code-card-head">
-              <h4>Code</h4>
-              <button class="copy-button" type="button" data-copy-target="snippet-histogram">Copy code</button>
+              </article>
             </div>
-            <pre><code id="snippet-histogram">import numpy as np
+          </article>
+
+          <article class="graph-tile">
+            <div class="panel-head graph-tile-head">
+              <div>
+                <p class="eyebrow">Python Graphs</p>
+                <h4>Histograms</h4>
+              </div>
+              <span class="pill">Distribution and spread</span>
+            </div>
+            <div class="feature-grid">
+              <article class="preview-card">
+                <img src="assets/histogram-preview.svg" alt="Histogram preview" />
+              </article>
+              <article class="code-card">
+                <div class="code-card-head">
+                  <h4>Code</h4>
+                  <button class="copy-button" type="button" data-copy-target="snippet-histogram">Copy code</button>
+                </div>
+                <pre><code id="snippet-histogram">import numpy as np
 import matplotlib.pyplot as plt
 from mertmensah import apply_mert_theme, style_axes, add_source_note
 
@@ -269,29 +272,29 @@ values = np.random.normal(loc=72, scale=9, size=300)
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.hist(values, bins=18, color="#68a8df", edgecolor="#204b73")
 style_axes(ax, title="Cycle Time Distribution", subtitle="Operational observations")
-add_source_note(ax, "Source: Internal workflow logs")</code></pre>
-          </article>
-        </div>
-      </section>
-
-      <section class="panel" id="heatmaps">
-        <div class="panel-head">
-          <div>
-            <p class="eyebrow">Python Graphs</p>
-            <h3>Heatmaps</h3>
-          </div>
-          <span class="pill">Intensity and comparison</span>
-        </div>
-        <div class="panel-grid feature-grid">
-          <article class="preview-card">
-            <img src="assets/heatmap-preview.svg" alt="Heatmap preview" />
-          </article>
-          <article class="code-card">
-            <div class="code-card-head">
-              <h4>Code</h4>
-              <button class="copy-button" type="button" data-copy-target="snippet-heatmap">Copy code</button>
+add_source_note(ax, "Source: Internal process logs")</code></pre>
+              </article>
             </div>
-            <pre><code id="snippet-heatmap">from mertmensah import heatmap
+          </article>
+
+          <article class="graph-tile">
+            <div class="panel-head graph-tile-head">
+              <div>
+                <p class="eyebrow">Python Graphs</p>
+                <h4>Heatmaps</h4>
+              </div>
+              <span class="pill">Intensity and comparison</span>
+            </div>
+            <div class="feature-grid">
+              <article class="preview-card">
+                <img src="assets/heatmap-preview.svg" alt="Heatmap preview" />
+              </article>
+              <article class="code-card">
+                <div class="code-card-head">
+                  <h4>Code</h4>
+                  <button class="copy-button" type="button" data-copy-target="snippet-heatmap">Copy code</button>
+                </div>
+                <pre><code id="snippet-heatmap">from mertmensah import heatmap
 import pandas as pd
 
 matrix = pd.DataFrame(
@@ -305,28 +308,28 @@ ax = heatmap(
     title="Regional Performance Heatmap",
     subtitle="Relative strength by quarter",
 )</code></pre>
-          </article>
-        </div>
-      </section>
-
-      <section class="panel" id="bars">
-        <div class="panel-head">
-          <div>
-            <p class="eyebrow">Python Graphs</p>
-            <h3>Bar charts</h3>
-          </div>
-          <span class="pill">Ranking and comparison</span>
-        </div>
-        <div class="panel-grid feature-grid">
-          <article class="preview-card">
-            <img src="assets/bar-preview.svg" alt="Bar chart preview" />
-          </article>
-          <article class="code-card">
-            <div class="code-card-head">
-              <h4>Code</h4>
-              <button class="copy-button" type="button" data-copy-target="snippet-bars">Copy code</button>
+              </article>
             </div>
-            <pre><code id="snippet-bars">from mertmensah import barplot, add_source_note
+          </article>
+
+          <article class="graph-tile">
+            <div class="panel-head graph-tile-head">
+              <div>
+                <p class="eyebrow">Python Graphs</p>
+                <h4>Bar charts</h4>
+              </div>
+              <span class="pill">Ranking and comparison</span>
+            </div>
+            <div class="feature-grid">
+              <article class="preview-card">
+                <img src="assets/bar-preview.svg" alt="Bar chart preview" />
+              </article>
+              <article class="code-card">
+                <div class="code-card-head">
+                  <h4>Code</h4>
+                  <button class="copy-button" type="button" data-copy-target="snippet-bars">Copy code</button>
+                </div>
+                <pre><code id="snippet-bars">from mertmensah import barplot, add_source_note
 import pandas as pd
 
 summary = pd.DataFrame({
@@ -342,28 +345,28 @@ ax = barplot(
     subtitle="Year-over-year comparison",
 )
 add_source_note(ax, "Source: Internal planning data")</code></pre>
-          </article>
-        </div>
-      </section>
-
-      <section class="panel" id="scatter">
-        <div class="panel-head">
-          <div>
-            <p class="eyebrow">Python Graphs</p>
-            <h3>Scatter plots</h3>
-          </div>
-          <span class="pill">Correlation and clustering</span>
-        </div>
-        <div class="panel-grid feature-grid">
-          <article class="preview-card">
-            <img src="assets/scatter-preview.svg" alt="Scatter plot preview" />
-          </article>
-          <article class="code-card">
-            <div class="code-card-head">
-              <h4>Code</h4>
-              <button class="copy-button" type="button" data-copy-target="snippet-scatter">Copy code</button>
+              </article>
             </div>
-            <pre><code id="snippet-scatter">import matplotlib.pyplot as plt
+          </article>
+
+          <article class="graph-tile">
+            <div class="panel-head graph-tile-head">
+              <div>
+                <p class="eyebrow">Python Graphs</p>
+                <h4>Scatter plots</h4>
+              </div>
+              <span class="pill">Correlation and clustering</span>
+            </div>
+            <div class="feature-grid">
+              <article class="preview-card">
+                <img src="assets/scatter-preview.svg" alt="Scatter plot preview" />
+              </article>
+              <article class="code-card">
+                <div class="code-card-head">
+                  <h4>Code</h4>
+                  <button class="copy-button" type="button" data-copy-target="snippet-scatter">Copy code</button>
+                </div>
+                <pre><code id="snippet-scatter">import matplotlib.pyplot as plt
 import pandas as pd
 from mertmensah import apply_mert_theme, style_axes
 
@@ -378,28 +381,28 @@ df = pd.DataFrame({
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.scatter(df["satisfaction"], df["retention"], s=180, c="#68a8df", edgecolors="#204b73", linewidths=1.2)
 style_axes(ax, title="Retention vs Satisfaction", subtitle="Cluster positioning by account segment")</code></pre>
-          </article>
-        </div>
-      </section>
-
-      <section class="panel" id="stacked">
-        <div class="panel-head">
-          <div>
-            <p class="eyebrow">Python Graphs</p>
-            <h3>Stacked bars</h3>
-          </div>
-          <span class="pill">Composition over time</span>
-        </div>
-        <div class="panel-grid feature-grid">
-          <article class="preview-card">
-            <img src="assets/stacked-preview.svg" alt="Stacked bar preview" />
-          </article>
-          <article class="code-card">
-            <div class="code-card-head">
-              <h4>Code</h4>
-              <button class="copy-button" type="button" data-copy-target="snippet-stacked">Copy code</button>
+              </article>
             </div>
-            <pre><code id="snippet-stacked">import matplotlib.pyplot as plt
+          </article>
+
+          <article class="graph-tile">
+            <div class="panel-head graph-tile-head">
+              <div>
+                <p class="eyebrow">Python Graphs</p>
+                <h4>Stacked bars</h4>
+              </div>
+              <span class="pill">Composition over time</span>
+            </div>
+            <div class="feature-grid">
+              <article class="preview-card">
+                <img src="assets/stacked-preview.svg" alt="Stacked bar preview" />
+              </article>
+              <article class="code-card">
+                <div class="code-card-head">
+                  <h4>Code</h4>
+                  <button class="copy-button" type="button" data-copy-target="snippet-stacked">Copy code</button>
+                </div>
+                <pre><code id="snippet-stacked">import matplotlib.pyplot as plt
 import pandas as pd
 from mertmensah import apply_mert_theme, style_axes, add_source_note
 
@@ -419,28 +422,28 @@ ax.bar(df["quarter"], df["expansion"], bottom=df["new"] + df["renewal"], color="
 style_axes(ax, title="Revenue Mix", subtitle="Quarterly composition")
 ax.legend(frameon=False)
 add_source_note(ax, "Source: Planning model")</code></pre>
-          </article>
-        </div>
-      </section>
-
-      <section class="panel" id="waterfall">
-        <div class="panel-head">
-          <div>
-            <p class="eyebrow">Python Graphs</p>
-            <h3>Waterfalls</h3>
-          </div>
-          <span class="pill">Bridge from start to finish</span>
-        </div>
-        <div class="panel-grid feature-grid">
-          <article class="preview-card">
-            <img src="assets/waterfall-preview.svg" alt="Waterfall preview" />
-          </article>
-          <article class="code-card">
-            <div class="code-card-head">
-              <h4>Code</h4>
-              <button class="copy-button" type="button" data-copy-target="snippet-waterfall">Copy code</button>
+              </article>
             </div>
-            <pre><code id="snippet-waterfall">import matplotlib.pyplot as plt
+          </article>
+
+          <article class="graph-tile">
+            <div class="panel-head graph-tile-head">
+              <div>
+                <p class="eyebrow">Python Graphs</p>
+                <h4>Waterfalls</h4>
+              </div>
+              <span class="pill">Bridge from start to finish</span>
+            </div>
+            <div class="feature-grid">
+              <article class="preview-card">
+                <img src="assets/waterfall-preview.svg" alt="Waterfall preview" />
+              </article>
+              <article class="code-card">
+                <div class="code-card-head">
+                  <h4>Code</h4>
+                  <button class="copy-button" type="button" data-copy-target="snippet-waterfall">Copy code</button>
+                </div>
+                <pre><code id="snippet-waterfall">import matplotlib.pyplot as plt
 import pandas as pd
 from mertmensah import apply_mert_theme, style_axes
 
@@ -458,6 +461,8 @@ colors = ["#9fc9ee", "#68a8df", "#d66f6f", "#204b73", "#2f6fb1"]
 fig, ax = plt.subplots(figsize=(10, 6))
 ax.bar(bridge["step"], heights, bottom=starts, color=colors)
 style_axes(ax, title="Revenue Bridge", subtitle="Drivers of year-over-year change")</code></pre>
+              </article>
+            </div>
           </article>
         </div>
       </section>

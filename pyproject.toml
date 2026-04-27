@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mertmensah"
+version = "0.1.0"
+description = "Personal presentation and plotting style toolkit for Python and browser-viewable slide decks."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.8",
+  "numpy>=1.26,<2.3",
+  "pandas>=2.2",
+  "seaborn>=0.13",
+]
+authors = [
+  { name = "Mert Mensah" }
+]
+keywords = ["matplotlib", "seaborn", "slides", "presentation", "theme", "analytics"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

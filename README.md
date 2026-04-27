@@ -61,3 +61,7 @@ The default theme matches the visual preferences established in recent Mert proj
 ## Examples
 
 See `examples/` for a plot demo and slide-deck demo.
+
+## Reference Site
+
+A GitHub Pages frontend for browsing chart and slide-deck reference patterns lives under `docs/`.

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mertmensah | Style Reference</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <p class="eyebrow">Reference System</p>
+          <h1>mertmensah</h1>
+          <p class="brand-copy">A personal front end for presentation design, chart styling, and browser-viewable slide decks.</p>
+        </div>
+      </div>
+
+      <nav class="nav-list" aria-label="Reference categories">
+        <button class="nav-item active" data-target="overview">Overview</button>
+        <button class="nav-item" data-target="slides">HTML Slide Decks</button>
+        <button class="nav-item" data-target="timeseries">Python Graphs: Time Series</button>
+        <button class="nav-item" data-target="histograms">Python Graphs: Histograms</button>
+        <button class="nav-item" data-target="heatmaps">Python Graphs: Heatmaps</button>
+        <button class="nav-item" data-target="bars">Python Graphs: Bar Charts</button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <p>Design language:</p>
+        <ul>
+          <li>Light blue-white atmosphere</li>
+          <li>Aptos-first typography</li>
+          <li>Bold title hierarchy</li>
+          <li>Presentation-ready spacing</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main-pane">
+      <header class="hero">
+        <p class="eyebrow">Work Reference</p>
+        <h2>Browse reusable style code by artifact type</h2>
+        <p>
+          Use the left pane to jump between categories. Each section shows the visual treatment, the package API,
+          and copy-ready code snippets for future work.
+        </p>
+      </header>
+
+      <section class="panel active" id="overview">
+        <div class="panel-grid overview-grid">
+          <article class="info-card">
+            <h3>Package Install</h3>
+            <pre><code>pip install mertmensah</code></pre>
+          </article>
+          <article class="info-card">
+            <h3>Core Imports</h3>
+            <pre><code>from mertmensah import (
+    apply_mert_theme,
+    lineplot,
+    barplot,
+    heatmap,
+    DeckSlide,
+    write_slide_deck,
+)</code></pre>
+          </article>
+          <article class="info-card">
+            <h3>Best Use Cases</h3>
+            <ul>
+              <li>Executive update charts</li>
+              <li>Internal review decks</li>
+              <li>Browser-viewable presentations</li>
+              <li>Fast analytical storytelling in Python</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="slides">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">HTML Slide Decks</p>
+            <h3>Browser-viewable presentation layouts</h3>
+          </div>
+          <span class="pill">Click or use arrow keys</span>
+        </div>
+        <div class="panel-grid feature-grid">
+          <article class="preview-card preview-card-wide">
+            <iframe title="Slide deck preview" src="assets/sample_deck.html"></iframe>
+          </article>
+          <article class="code-card">
+            <h4>Python API</h4>
+            <pre><code>from mertmensah import DeckSlide, DeckSection, write_slide_deck
+
+slides = [
+    DeckSlide(
+        eyebrow="Quarterly Review",
+        title="Commercial Performance",
+        subtitle="A concise browser-viewable deck.",
+        bullets=[
+            "Revenue and margin improved.",
+            "West region led growth.",
+        ],
+        sections=[
+            DeckSection(
+                heading="Implication",
+                bullets=["Prioritize renewals", "Scale proven playbooks"],
+            )
+        ],
+    )
+]
+
+write_slide_deck(slides, output_path="deck.html", title="Quarterly Review")</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="timeseries">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Python Graphs</p>
+            <h3>Time series</h3>
+          </div>
+          <span class="pill">Trend and trajectory</span>
+        </div>
+        <div class="panel-grid feature-grid">
+          <article class="preview-card">
+            <img src="assets/timeseries-preview.svg" alt="Time series preview" />
+          </article>
+          <article class="code-card">
+            <h4>Code</h4>
+            <pre><code>from mertmensah import apply_mert_theme, lineplot
+import pandas as pd
+
+apply_mert_theme()
+
+df = pd.DataFrame({
+    "month": ["Jan", "Feb", "Mar", "Apr"],
+    "revenue": [120, 140, 180, 205],
+})
+
+ax = lineplot(
+    df,
+    x="month",
+    y="revenue",
+    title="Revenue Trend",
+    subtitle="Monthly commercial momentum",
+)</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="histograms">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Python Graphs</p>
+            <h3>Histograms</h3>
+          </div>
+          <span class="pill">Distribution and spread</span>
+        </div>
+        <div class="panel-grid feature-grid">
+          <article class="preview-card">
+            <img src="assets/histogram-preview.svg" alt="Histogram preview" />
+          </article>
+          <article class="code-card">
+            <h4>Code</h4>
+            <pre><code>import numpy as np
+import matplotlib.pyplot as plt
+from mertmensah import apply_mert_theme, style_axes, add_source_note
+
+apply_mert_theme()
+values = np.random.normal(loc=72, scale=9, size=300)
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.hist(values, bins=18, color="#68a8df", edgecolor="#204b73")
+style_axes(ax, title="Cycle Time Distribution", subtitle="Operational observations")
+add_source_note(ax, "Source: Internal workflow logs")</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="heatmaps">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Python Graphs</p>
+            <h3>Heatmaps</h3>
+          </div>
+          <span class="pill">Intensity and comparison</span>
+        </div>
+        <div class="panel-grid feature-grid">
+          <article class="preview-card">
+            <img src="assets/heatmap-preview.svg" alt="Heatmap preview" />
+          </article>
+          <article class="code-card">
+            <h4>Code</h4>
+            <pre><code>from mertmensah import heatmap
+import pandas as pd
+
+matrix = pd.DataFrame(
+    [[0.8, 0.6, 0.4], [0.7, 0.9, 0.5], [0.5, 0.7, 0.85]],
+    columns=["North", "South", "West"],
+    index=["Q1", "Q2", "Q3"],
+)
+
+ax = heatmap(
+    matrix,
+    title="Regional Performance Heatmap",
+    subtitle="Relative strength by quarter",
+)</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="bars">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Python Graphs</p>
+            <h3>Bar charts</h3>
+          </div>
+          <span class="pill">Ranking and comparison</span>
+        </div>
+        <div class="panel-grid feature-grid">
+          <article class="preview-card">
+            <img src="assets/bar-preview.svg" alt="Bar chart preview" />
+          </article>
+          <article class="code-card">
+            <h4>Code</h4>
+            <pre><code>from mertmensah import barplot, add_source_note
+import pandas as pd
+
+summary = pd.DataFrame({
+    "team": ["North", "South", "West", "East"],
+    "growth": [14, 9, 17, 12],
+})
+
+ax = barplot(
+    summary,
+    x="team",
+    y="growth",
+    title="Regional Growth",
+    subtitle="Year-over-year comparison",
+)
+add_source_note(ax, "Source: Internal planning data")</code></pre>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

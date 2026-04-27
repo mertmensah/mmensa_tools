@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <rect width="960" height="540" rx="28" fill="#F8FBFF"/>
+  <rect x="40" y="36" width="880" height="468" rx="24" fill="white" stroke="#CFE1F2"/>
+  <text x="78" y="94" fill="#2F6FB1" font-family="Aptos, Segoe UI, sans-serif" font-size="14" font-weight="800" letter-spacing="2">PYTHON GRAPHS</text>
+  <text x="78" y="132" fill="#17314A" font-family="Aptos Display, Aptos, sans-serif" font-size="36" font-weight="800">Revenue Trend</text>
+  <text x="78" y="160" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="16">Monthly commercial momentum</text>
+  <line x1="110" y1="410" x2="850" y2="410" stroke="#CFE1F2" stroke-width="2"/>
+  <line x1="110" y1="180" x2="110" y2="410" stroke="#CFE1F2" stroke-width="2"/>
+  <path d="M140 360C180 344 220 326 260 310C300 294 340 284 380 264C420 244 460 228 500 212C540 196 580 182 620 170C660 158 700 150 740 140C780 130 810 122 840 112" stroke="#2F6FB1" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="140" cy="360" r="8" fill="#2F6FB1"/>
+  <circle cx="260" cy="310" r="8" fill="#2F6FB1"/>
+  <circle cx="380" cy="264" r="8" fill="#2F6FB1"/>
+  <circle cx="500" cy="212" r="8" fill="#2F6FB1"/>
+  <circle cx="620" cy="170" r="8" fill="#2F6FB1"/>
+  <circle cx="740" cy="140" r="8" fill="#2F6FB1"/>
+  <circle cx="840" cy="112" r="8" fill="#2F6FB1"/>
+</svg>

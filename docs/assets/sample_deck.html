@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Deck</title>
+  <style>
+    body { margin: 0; font-family: Aptos, "Segoe UI", sans-serif; background: linear-gradient(180deg, #f7fbff, #e8f2ff); }
+    .shell { min-height: 100vh; display: grid; grid-template-rows: 1fr auto; }
+    .slide { padding: 24px; display: grid; place-items: center; }
+    .panel { width: min(760px, 100%); background: rgba(255,255,255,0.92); border: 1px solid #cfe1f2; border-radius: 24px; padding: 28px; box-shadow: 0 18px 42px rgba(56,95,131,0.16); }
+    .eyebrow { margin: 0 0 8px; color: #2f6fb1; text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px; font-weight: 800; }
+    h1 { margin: 0 0 12px; font-family: "Aptos Display", Aptos, sans-serif; font-size: 42px; line-height: 1.05; }
+    p, li { color: #466786; }
+    ul { margin: 16px 0 0; padding-left: 20px; display: grid; gap: 8px; }
+    .footer { display: flex; justify-content: space-between; padding: 14px 20px; color: #466786; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <main class="slide">
+      <section class="panel">
+        <p class="eyebrow">Quarterly Review</p>
+        <h1>Commercial Performance</h1>
+        <p>A browser-viewable slide deck produced from Python, styled for internal briefings and stakeholder reviews.</p>
+        <ul>
+          <li>Revenue and margin improved.</li>
+          <li>West region outperformed plan.</li>
+          <li>Arrow keys or clicks move between slides in the generated deck.</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>Preview sample</span>
+      <span>1 / 1</span>
+    </footer>
+  </div>
+</body>
+</html>

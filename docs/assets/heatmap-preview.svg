@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" fill="none">
+  <rect width="960" height="540" rx="28" fill="#F8FBFF"/>
+  <rect x="40" y="36" width="880" height="468" rx="24" fill="white" stroke="#CFE1F2"/>
+  <text x="78" y="94" fill="#2F6FB1" font-family="Aptos, Segoe UI, sans-serif" font-size="14" font-weight="800" letter-spacing="2">PYTHON GRAPHS</text>
+  <text x="78" y="132" fill="#17314A" font-family="Aptos Display, Aptos, sans-serif" font-size="36" font-weight="800">Regional Performance Heatmap</text>
+  <text x="78" y="160" fill="#466786" font-family="Aptos, Segoe UI, sans-serif" font-size="16">Relative strength by quarter</text>
+  <g transform="translate(190 210)">
+    <rect width="120" height="80" fill="#DCEEFF" stroke="#CFE1F2"/>
+    <rect x="120" width="120" height="80" fill="#AED2F2" stroke="#CFE1F2"/>
+    <rect x="240" width="120" height="80" fill="#6EA9DC" stroke="#CFE1F2"/>
+    <rect y="80" width="120" height="80" fill="#C8E3F9" stroke="#CFE1F2"/>
+    <rect x="120" y="80" width="120" height="80" fill="#2F6FB1" stroke="#CFE1F2"/>
+    <rect x="240" y="80" width="120" height="80" fill="#96C8EA" stroke="#CFE1F2"/>
+    <rect y="160" width="120" height="80" fill="#E8F4FF" stroke="#CFE1F2"/>
+    <rect x="120" y="160" width="120" height="80" fill="#C1DDF5" stroke="#CFE1F2"/>
+    <rect x="240" y="160" width="120" height="80" fill="#78B2E2" stroke="#CFE1F2"/>
+  </g>
+</svg>

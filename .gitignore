@@ -8,3 +8,6 @@ build/
 *.html
 *.png
 *.svg
+!docs/**/*.html
+!docs/**/*.png
+!docs/**/*.svg
